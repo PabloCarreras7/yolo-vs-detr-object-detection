@@ -75,7 +75,8 @@ The course provided the data pipeline (VOC loading, augmentation, target encodin
 ├── notebooks/
 │   ├── 01_yolo.ipynb                    # training, predictions, feature maps, evaluation (with outputs)
 │   └── 02_detr.ipynb                    # training, predictions, evaluation (with outputs)
-├── scripts/download_data.sh             # downloads PASCAL VOC 2007
+├── annotations/                         # VOC 2007 box/label lists (train+val, test)
+├── scripts/download_data.sh             # downloads PASCAL VOC 2007 images
 ├── results/                             # figures + metrics_log.json (raw per-epoch mAP and per-class AP)
 ├── requirements.txt
 └── LICENSE
@@ -97,7 +98,7 @@ A GPU is required in practice (Google Colab works). Checkpoints are written to `
 ## Data
 
 - **PASCAL VOC 2007** (trainval: 5,011 images; test: 4,952 images, of which 4,950 are evaluated) comes from the [official site](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/) via `scripts/download_data.sh`.
-- The notebooks read flat annotation lists (`annotations/voc2007.txt`, `annotations/voc2007test.txt`, one line per image: `file x1 y1 x2 y2 class …`). These were provided by the course and are not redistributed here. They are a plain-text conversion of the VOC XML annotations.
+- `annotations/voc2007.txt` and `annotations/voc2007test.txt` are plain-text versions of the VOC XML labels (one line per image: `file x1 y1 x2 y2 class …`). They are included in the repo. Only the images need to be downloaded.
 
 ## What I learned
 

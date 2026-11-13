@@ -23,5 +23,3 @@ runs/
 .DS_Store
 __MACOSX/
 
-# VOC annotation lists (course-provided, see README)
-annotations/
