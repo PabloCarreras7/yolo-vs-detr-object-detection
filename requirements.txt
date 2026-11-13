@@ -1,0 +1,9 @@
+torch>=2.1
+torchvision>=0.16
+transformers
+opencv-python
+scipy
+numpy
+matplotlib
+tqdm
+jupyter

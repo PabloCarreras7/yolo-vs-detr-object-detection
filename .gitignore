@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+
+# Data, weights and run artifacts (never committed)
+data/
+checkpoints/
+runs/
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.safetensors
+*.zip
+*.tar
+
+# OS
+.DS_Store
+__MACOSX/
+
+# VOC annotation lists (course-provided, see README)
+annotations/
